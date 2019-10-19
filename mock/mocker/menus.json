@@ -1,0 +1,134 @@
+{
+  "code": 1,
+  "data": [
+    {
+      "action": "",
+      "children": [
+        {
+          "action": "",
+          "children": [
+            {
+              "action": "",
+              "children": [
+                {
+                  "action": "",
+                  "children": null,
+                  "createTime": 1567241879000,
+                  "creator": "admin",
+                  "icon": "",
+                  "keyword": "new-finance-withdraw-transfer-do",
+                  "menuId": 50000000,
+                  "name": "出款",
+                  "parentId": 500000,
+                  "selected": 0,
+                  "sort": 0
+                }
+              ],
+              "createTime": 1567241872000,
+              "creator": "admin",
+              "icon": "",
+              "keyword": "/finance/withdraw/payment",
+              "menuId": 500000,
+              "name": "提现出款",
+              "parentId": 5000,
+              "selected": 0,
+              "sort": 1,
+              "type": false
+            },
+            {
+              "action": "",
+              "children": [
+                {
+                  "action": "",
+                  "children": null,
+                  "createTime": 1567241879000,
+                  "creator": "admin",
+                  "icon": "",
+                  "keyword": "new-finance-withdraw-approval-do",
+                  "menuId": 50000100,
+                  "name": "审核",
+                  "parentId": 500001,
+                  "selected": 0,
+                  "sort": 0,
+                  "type": true
+                }
+              ],
+              "createTime": 1567241873000,
+              "creator": "admin",
+              "icon": "",
+              "keyword": "/finance/withdraw/examine",
+              "menuId": 500001,
+              "name": "提现审核",
+              "parentId": 5000,
+              "selected": 0,
+              "sort": 2,
+              "type": false
+            },
+            {
+              "action": "",
+              "children": [],
+              "createTime": 1567241873000,
+              "creator": "admin",
+              "icon": "",
+              "keyword": "/finance/withdraw/seperate",
+              "menuId": 500002,
+              "name": "提现分单",
+              "parentId": 5000,
+              "selected": 0,
+              "sort": 3,
+              "type": false
+            }
+          ],
+          "createTime": 1568116979000,
+          "creator": "admin",
+          "icon": "",
+          "keyword": "/finance/withdraw",
+          "menuId": 5000,
+          "name": "提现管理",
+          "parentId": 50,
+          "selected": 0,
+          "sort": 1,
+          "type": false
+        }
+      ],
+      "createTime": 1567241870000,
+      "creator": "admin",
+      "icon": "money",
+      "keyword": "/finance",
+      "menuId": 50,
+      "name": "财务系统",
+      "parentId": 0,
+      "selected": 0,
+      "sort": 1,
+      "type": false
+    },
+    {
+      "action": "",
+      "children": [],
+      "createTime": 1567241870000,
+      "creator": "admin",
+      "icon": "bug",
+      "keyword": "/risk",
+      "menuId": 51,
+      "name": "风控系统",
+      "parentId": 0,
+      "selected": 0,
+      "sort": 2,
+      "type": false
+    },
+    {
+      "action": "",
+      "children": null,
+      "createTime": 1567241870000,
+      "creator": "admin",
+      "icon": "",
+      "keyword": "/operational",
+      "menuId": 52,
+      "name": "运营系统",
+      "parentId": 0,
+      "selected": 0,
+      "sort": 3,
+      "type": false
+    }
+  ]
+}
