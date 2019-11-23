@@ -1,9 +1,9 @@
 <template>
   <div class="menu-item">
     <template v-if="!menu.children || menu.children.length === 0">
-      <el-menu-item :style='{ padding: 0 }'>
+      <el-menu-item>
         <i class="el-icon-menu"></i>
-        {{menu.name}}
+        <span slot="title">{{menu.name}}</span>
       </el-menu-item>
     </template>
 
@@ -13,7 +13,7 @@
     >
       <template slot="title">
         <i class="el-icon-menu"></i>
-        {{menu.name}}
+        <span>{{menu.name}}</span>
       </template>
 
       <template v-for="child in menu.children">
@@ -28,7 +28,7 @@
           :index="child.keyword"
         >
           <i class="el-icon-location"></i>
-          {{child.name}}
+          <span slot="title">{{menu.name}}</span>
         </el-menu-item>
       </template>
     </el-submenu>

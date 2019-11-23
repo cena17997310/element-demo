@@ -10,8 +10,13 @@
         :collapse="isCollapse"
         text-color="#bfcbd9"
         active-text-color="#409EFF"
+        class="el-menu-vertical"
       >
-        <LeftMenuItem v-for='menu in menus' :key="menu.name" :menu='menu'/>
+        <LeftMenuItem
+          v-for='menu in menus'
+          :key="menu.name"
+          :menu='menu'
+        />
       </el-menu>
     </el-scrollbar>
   </div>
@@ -26,15 +31,14 @@ export default {
     menus: {
       type: Array,
       default: () => []
+    },
+    isCollapse: {
+      type: Boolean,
+      isReqiured: true
     }
   },
   components: {
     LeftMenuItem
-  },
-  data() {
-    return {
-      isCollapse: false
-    };
   },
   mounted() {
     
@@ -51,47 +55,28 @@ export default {
 </script>
 
 <style lang="scss">
-  .sidebar-container {
-    transition: width 0.28s;
-    width: 220px !important;
+.sidebar-container {
+  width: 220px;
+  height: 100%;
+  position: fixed;
+  font-size: 0px;
+  bottom: 0;
+  left: 0;
+
+  .el-scrollbar {
     height: 100%;
-    position: fixed;
-    font-size: 0px;
-    bottom: 0;
-    left: 0;
-    z-index: 1001;
-    overflow: hidden;
- 
-    .horizontal-collapse-transition {
-      transition: 0s width ease-in-out, 0s padding-left ease-in-out, 0s padding-right ease-in-out;
-    }
-    .el-scrollbar {
+  }
+
+  .scrollbar-wrapper {
+    overflow-x: hidden !important;
+    .el-scrollbar__view {
       height: 100%;
-    }
-    .scrollbar-wrapper {
-      overflow-x: hidden!important;
-      .el-scrollbar__view {
-        height: 100%;
-      }
-    }
-    .el-scrollbar__bar.is-vertical{
-      right: 0px;
-    }
-    .is-horizontal {
-      display: none;
-    }
-    a {
-      display: inline-block;
-      width: 100%;
-      overflow: hidden;
-    }
-    .el-menu {
-      border: none;
-      height: 100%;
-      width: 100% !important;
-    }
-    .is-active > .el-submenu__title{
-        color: red !important;
     }
   }
+
+  .el-menu {
+    border: none;
+    height: 100%;
+  }
+}
 </style>
